@@ -30,11 +30,11 @@
 
 %define gcj_support %{?_with_gcj_support:1}%{!?_with_gcj_support:%{?_without_gcj_support:0}%{!?_without_gcj_support:%{?_gcj_support:%{_gcj_support}}%{!?_gcj_support:0}}}
 
-# If you don't want to build with maven, and use straight ant instead,
-# give rpmbuild option '--without maven'
+# If you want to build with maven insteaf of straight ant,
+# give rpmbuild option '--with maven'
 
-%define with_maven %{!?_without_maven:1}%{?_without_maven:0}
-%define without_maven %{?_without_maven:1}%{!?_without_maven:0}
+%define with_maven %{!?_with_maven:0}%{?_with_maven:1}
+%define without_maven %{?_with_maven:0}%{!?_with_maven:1}
 
 %define section  free
 %define grname   excalibur
@@ -42,14 +42,12 @@
 
 Name:           excalibur-avalon-framework
 Version:        4.3
-Release:        7jpp
+Release:        %mkrel 7
 Epoch:          0
 Summary:        Avalon Framework
 License:        Apache Software License 2.0
 Url:            http://excalibur.apache.org/
-Group:          Development/Libraries/Application Frameworks
-Vendor:         JPackage Project
-Distribution:   JPackage
+Group:          Development/Java
 Source0:        http://www.apache.org/dist/excalibur/avalon-framework/source/avalon-framework-api-4.3-src.tar.gz
 Source1:        pom-maven2jpp-depcat.xsl
 Source2:        pom-maven2jpp-newdepmap.xsl
@@ -104,7 +102,7 @@ convenience implementations of the generic components
 
 %package api
 Summary:  Avalon Framework API
-Group:    Development/Libraries/Application Frameworks
+Group:    Development/Java
 Requires: excalibur-avalon-logkit
 
 %description api
@@ -112,7 +110,7 @@ Requires: excalibur-avalon-logkit
 
 %package impl
 Summary:  Avalon Framework Implementation
-Group:    Development/Libraries/Application Frameworks
+Group:    Development/Java
 Requires:       excalibur-avalon-framework-api
 Requires:       excalibur-avalon-logkit
 Requires:       jakarta-commons-logging
@@ -126,7 +124,7 @@ Requires:       xml-commons-apis
 
 %package javadoc
 Summary:        Javadoc for %{name}
-Group:          Development/Documentation
+Group:          Development/Java
 Obsoletes:      avalon-framework-javadoc
 Provides:       avalon-framework-javadoc
 Requires(post):   /bin/rm,/bin/ln
@@ -137,7 +135,7 @@ Requires(postun): /bin/rm
 
 %package api-javadoc
 Summary:        Javadoc for %{name} API
-Group:          Development/Documentation
+Group:          Development/Java
 Requires(post):   /bin/rm,/bin/ln
 Requires(postun): /bin/rm
 
@@ -146,7 +144,7 @@ Requires(postun): /bin/rm
 
 %package impl-javadoc
 Summary:        Javadoc for %{name} Implementation
-Group:          Development/Documentation
+Group:          Development/Java
 Requires(post):   /bin/rm,/bin/ln
 Requires(postun): /bin/rm
 
