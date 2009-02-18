@@ -65,6 +65,9 @@ BuildRequires:  maven >= 0:1.1
 BuildRequires:  jmock
 %else
 BuildRequires:  ant >= 0:1.6
+BuildRequires:	ant-junit
+BuildRequires:	ant-commons-logging
+BuildRequires:	ant-apache-log4j
 %endif
 BuildRequires:  junit
 BuildRequires:  jpackage-utils >= 0:1.6
