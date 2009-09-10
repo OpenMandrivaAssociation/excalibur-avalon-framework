@@ -42,7 +42,7 @@
 
 Name:           excalibur-avalon-framework
 Version:        4.3
-Release:        %mkrel 7
+Release:        %mkrel 8
 Epoch:          0
 Summary:        Avalon Framework
 License:        Apache Software License 2.0
