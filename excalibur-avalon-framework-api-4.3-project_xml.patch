@@ -1,0 +1,11 @@
+--- project.xml.orig	2005-09-05 18:43:19.000000000 +0200
++++ project.xml	2005-09-05 18:46:40.000000000 +0200
+@@ -16,7 +16,7 @@
+  limitations under the License.
+ -->
+ <project>
+-    <extend>${basedir}/../project-common.xml</extend>
++    <extend>${basedir}/project-common.xml</extend>
+     
+     <name>Avalon Framework API</name>
+     <artifactId>avalon-framework-api</artifactId>

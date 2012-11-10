@@ -1,0 +1,11 @@
+sources:
+  "avalon-framework-4.3-jpp-depmap.xml:"	508a896ada74bdea170ef2a0c7ba038bb62ec4e5
+  "avalon-framework-api-4.3-src.tar.gz:"	1ef0f79e0b094d09d8cac038dbb2ecde8422265b
+  "avalon-framework-impl-4.3-src.tar.gz:"	9bbdea5cb5f9d4749ded307392d9072909e3fcaa
+  "excalibur-avalon-framework-api-build.xml:"	412917cf3a19bb8e501ba5757238493e6e64c1ad
+  "excalibur-avalon-framework-impl-build.xml:"	46cd8d334c8444486fb18dd0c939fd897825581a
+  "excalibur-avalon-framework-project-common.xml:"	4f6a05c83aaa940c17adbb26fed11133312f0e3e
+  "excalibur-buildsystem.tar.gz:"	4c30dafa60916f8c0b41e0dc2ab510f6eca0a152
+  "pom-maven2jpp-depcat.xsl:"	5861cae5f65e559ece90a7342d182f5a534b65de
+  "pom-maven2jpp-mapdeps.xsl:"	88cf7a33ad75ef2554765bbc80d1605d284348f3
+  "pom-maven2jpp-newdepmap.xsl:"	834413ffc7f650705ce65ca2c89100153142cd92

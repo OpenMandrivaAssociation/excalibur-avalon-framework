@@ -1,0 +1,11 @@
+--- project.xml.sav	2005-08-30 04:00:34.000000000 +0200
++++ project.xml	2005-09-05 20:21:21.000000000 +0200
+@@ -17,7 +17,7 @@
+ -->
+ <project>
+     
+-    <extend>${basedir}/../project-common.xml</extend>
++    <extend>${basedir}/project-common.xml</extend>
+     
+     <name>Avalon Framework Implementation</name>
+     <artifactId>avalon-framework-impl</artifactId>

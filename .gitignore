@@ -1,0 +1,10 @@
+avalon-framework-4.3-jpp-depmap.xml
+avalon-framework-api-4.3-src.tar.gz
+avalon-framework-impl-4.3-src.tar.gz
+excalibur-avalon-framework-api-build.xml
+excalibur-avalon-framework-impl-build.xml
+excalibur-avalon-framework-project-common.xml
+excalibur-buildsystem.tar.gz
+pom-maven2jpp-depcat.xsl
+pom-maven2jpp-mapdeps.xsl
+pom-maven2jpp-newdepmap.xsl
