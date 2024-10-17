@@ -46,7 +46,7 @@ Release:        %mkrel 9
 Epoch:          0
 Summary:        Avalon Framework
 License:        Apache Software License 2.0
-Url:            http://excalibur.apache.org/
+Url:            https://excalibur.apache.org/
 Group:          Development/Java
 Source0:        http://www.apache.org/dist/excalibur/avalon-framework/source/avalon-framework-api-4.3-src.tar.gz
 Source1:        pom-maven2jpp-depcat.xsl
